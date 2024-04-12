@@ -1,38 +1,50 @@
-form {
-    width: 500px;
-    margin: 0 auto;
-    text-align: left;
-}
- input,
- textarea,
- select {
-    display: block;
-    margin-top: 10px ;
- }
- .header {
+.Container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .logo {
-    font-size: 1.5em;
-    display: inline-block;
-  }
-  
-  .nav {
-    display: flex;
-  }
-  
-  .nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 15px;
-  }
-  
-  .nav a:hover {
-    text-decoration: underline;
-  }
+}
+form {
+    backdrop-filter: blur(4px);
+    color: rgb(253, 251, 251);
+    border-radius: 10px;
+    box-shadow:0 2px 5px 2px black;
+    padding: 1.5rem;
+    width: 400px;
+}
+label{
+    display: block;
+    font-size: 25px;
+    margin: 15px 0 15px;
+}
+input, textarea, select{
+    display:block;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0,0,0, 0.9);
+    padding: 10px;
+    font: 1rem sans-serif;
+    box-sizing: border-box;
+}
+.btn {
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: .5s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1,1);
+    box-shadow: 2px 2px 5px;
+    color:black;
+}
+.btn:active{
+    transform: scale(0.90);
+}
+.msg{
+    text-align: center;
+    font-size: 1.5rem;
+}

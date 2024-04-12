@@ -1,19 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import  MyForm  from './components/MyForm.jsx'
+import  MyForm  from './components/MyForm';
 
 
 function App() {
- 
-
   return (
-    
-    <>
-      <h1>Formulario em React</h1>
-        <MyForm user={{ name: "Neilson", email: "neilsonvlcdn@gmail.com"}}/>
-      
-      
-    </>
+    <div className='App'>
+      <h1>Formulário em React</h1>
+          <MyForm
+          user={{ 
+            name:"", 
+            email:"", 
+            bio:"", 
+            role:"",
+          }}/>  
+    </div>
   )
 }
 
